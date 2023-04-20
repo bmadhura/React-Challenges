@@ -1,0 +1,43 @@
+.page{
+    width: 98vw;
+    height: 84vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 0.5em;
+}
+
+.imagesContainer{
+    height: 100%;
+    position: relative;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.buttonContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button{
+    border: none;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    background-color: #e8c3c3;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.button:hover{
+    background-color: #dea6a6;
+}
+
+.hide{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
