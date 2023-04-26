@@ -1,0 +1,16 @@
+.TableContainer {
+    --height: calc(100vh - 6rem);
+    max-height: var(--height);
+    min-height: var(--height);
+
+    overflow-y: auto;
+
+    .Table {
+        width: 100%;
+
+        td {
+            width: 33.33%;
+            text-align: center;
+        }
+    }
+}

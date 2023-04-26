@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-size: initial;
+  font-weight: initial;
+}
+
+/* PLEASE DO NOT DO THIS EVER */
+td button {
+  margin: 0 0.5rem;
+}

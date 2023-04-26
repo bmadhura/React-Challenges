@@ -22,9 +22,7 @@ const App = () => {
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = startIndex + rowsPerPage;
   const subsetOfData = posts.slice(startIndex, endIndex);
-
   const totalPages = Math.ceil(posts.length / rowsPerPage);
-
 
   const getDataFromService = async () => {
     const posts = await getData();

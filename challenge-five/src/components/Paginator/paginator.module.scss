@@ -1,0 +1,13 @@
+.paginator {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    .arrow {
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: #eee;
+        cursor: pointer;
+    }
+}
