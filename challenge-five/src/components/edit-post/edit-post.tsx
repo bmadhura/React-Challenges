@@ -1,10 +1,8 @@
 const EditPost = ({selectedPost, editPostSave}:any) =>{
-
-  console.log(selectedPost);
+    let selectedPostClone:any = [];
   
-
     const handleEditPostChange = (key: string, value: string | number | undefined) => {
-        const selectedPostClone: any = {...selectedPost};
+        selectedPostClone = {...selectedPost};
         selectedPostClone[key] = value;
     }
 
@@ -28,7 +26,7 @@ const EditPost = ({selectedPost, editPostSave}:any) =>{
             />
           </div>
 
-          <button onClick={() => editPostSave(selectedPost)}>edit</button>
+          <button onClick={() => editPostSave(selectedPostClone)}>edit</button>
         </div>
     )
 }

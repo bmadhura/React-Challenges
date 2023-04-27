@@ -14,10 +14,9 @@ const PostTable = ({postsToDisplay, editPost, removePost}:any) => {
           </thead>
           <tbody>
             {
-              postsToDisplay.map((post:any) => {
-                
+              postsToDisplay.map((post:any) => {    
                 return (
-                  <Post post={post} editPost={editPost} removePost={removePost}/>
+                  <Post key={post.id} post={post} editPost={editPost} removePost={removePost}/>
                 )
               })
             }

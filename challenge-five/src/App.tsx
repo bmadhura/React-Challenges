@@ -35,8 +35,8 @@ const App = () => {
     changePageSize(pageNumber, dispatch)
   }
 
-  postsToDisplay = state.posts.slice(0,state.pageSize);
-
+  postsToDisplay = state.posts.slice((state.pageNumber*state.pageSize),(state.pageNumber*state.pageSize) + state.pageSize);
+  
   return (
     <main className={styles.App}>
       {

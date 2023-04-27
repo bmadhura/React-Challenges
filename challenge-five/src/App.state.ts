@@ -78,8 +78,7 @@ export const changePageNumber = (offset: number, state: Istate, dispatch: Dispat
     const newPageNumber = state.pageNumber + offset;
     const maxPageNumber = state.posts.length / state.pageSize;
     if (newPageNumber < 0 || newPageNumber > maxPageNumber) return;
-
-    dispatch({ type: "CHANGE_PAGE_NUMBER", data: newPageNumber })
+    dispatch({ type: "CHANGE_PAGE_NUMBER", data: newPageNumber });
 }
 
 export const changePageSize = (pageSize: number, dispatch: Dispatch<Iaction>) => {
